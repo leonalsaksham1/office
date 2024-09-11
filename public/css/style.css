@@ -237,7 +237,7 @@ a:focus,
   font-weight: 300;
   line-height: 30px;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 2px;
 }
 header .intro-text {
   padding-top: 350px;
@@ -584,6 +584,7 @@ label {
   background: #fff;
 }
 /* Footer Section*/
+
 #footer {
   background: #27474e;
   padding: 10px 0;
@@ -663,4 +664,15 @@ label {
 .form-group textarea {
   border-radius: 4px !important;
 }
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 450px; /* Height of the map */
+  max-width: 600px; /* Optional max width */
+  margin: 0 auto; /* Centering the map */
+}
+
 

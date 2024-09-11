@@ -167,6 +167,18 @@ export const Contact = (props) => {
           </div>
         </div>
       </div>
+      <div style={{ width: "100%", height: "450px", border: "none" }}>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14130.840975075269!2d85.32620695884457!3d27.69534911902795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19a77520a339%3A0x4df14616bdef4f1c!2sSoftech%20Foundation%20Pvt.Ltd.!5e0!3m2!1sen!2snp!4v1726047867016!5m2!1sen!2snp"
+        width="1600"
+        height="450"
+        style={{ border: "none" }}
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        title="Google Maps"
+      ></iframe>
+    </div>
       <div id="footer">
         <div className="container text-center">
           <p>&copy; 2024 Saksham Bikram Shah. All Rights Reserved.</p>
