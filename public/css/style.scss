@@ -458,8 +458,8 @@ header .intro-text {
 }
 /* Contact Section */
 #contact {
-  padding: 5px 0 5px;
-  
+  padding: 30px 0 5px;
+
   background: linear-gradient(to right, #27474e 0%, #56a3a6 100%);
   color: rgba(255, 255, 255, 0.75);
 }
@@ -674,5 +674,67 @@ label {
   max-width: 600px; /* Optional max width */
   margin: 0 auto; /* Centering the map */
 }
+.counter-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  .block {
+    font-size: 24px;
+    width: 70px;
+    height: 70px;
+    padding: 18px 0 10px;
+    background: linear-gradient(to right, #27474e 0%, #56a3a6 100%);
+    border-radius: 50%;
+    color: #fff;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+  }
+}
 
-
+.achievements-section {
+  .achievements-header {
+    position: relative;
+    margin-bottom: 40px;
+    &::after {
+      position: absolute;
+      content: "";
+      background: rgba(255, 255, 255, 0.3);
+      height: 4px;
+      width: 60px;
+      bottom: -10px;
+      margin-left: -30px;
+      left: 50%;
+    }
+  }
+  .achievements-description {
+    margin-bottom: 40px;
+  }
+}
+#achievements {
+  padding: 100px 0;
+  color: white;
+  background: linear-gradient(to right, #27474e 0%, #56a3a6 100%);
+  h2 {
+    color: white;
+  }
+}
+.counter-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  .number {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  .title {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 18px;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+  }
+}

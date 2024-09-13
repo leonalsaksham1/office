@@ -46,8 +46,28 @@ export const Contact = (props) => {
       <div id="contact">
         <div className="container">
           <div className="row">
-            {/* Left Column: Contact Info and Get In Touch Form */}
-            <div className="col-md-6">
+            <div className="col-md-4" id="map">
+              <div className="section-title">
+                <h2>Location</h2>
+              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14130.840975075269!2d85.32620695884457!3d27.69534911902795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19a77520a339%3A0x4df14616bdef4f1c!2sSoftech%20Foundation%20Pvt.Ltd.!5e0!3m2!1sen!2snp!4v1726047867016!5m2!1sen!2snp"
+                width="100%"
+                height="100%"
+                style={{
+                  border: "none",
+                  maxWidth: "100%",
+                  maxHeight: "333px",
+                  borderRadius: "10px",
+                }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Google Maps"
+              ></iframe>
+            </div>
+
+            <div className="col-md-4" id="contact-info">
               {/* Contact Info Section */}
               <div className="contact-info">
                 <div className="section-title">
@@ -97,8 +117,9 @@ export const Contact = (props) => {
                   </ul>
                 </div>
               </div>
+            </div>
 
-              {/* Get In Touch Form */}
+            <div className="col-md-4" id="contact-form">
               <div className="get-in-touch">
                 <div className="section-title">
                   <h2>Get In Touch</h2>
@@ -161,40 +182,6 @@ export const Contact = (props) => {
                     Send Message
                   </button>
                 </form>
-              </div>
-            </div>
-
-            {/* Right Column: Google Map */}
-            <div
-              className="col-md-6 d-flex align-items-center justify-content-center"
-              style={{
-                display: "flex",
-                justifyContent: "flex-end", // moves the map to the right
-                alignItems: "center",
-                textAlign: "center",
-              }}
-            >
-              <div
-                style={{
-                  width: "100%",
-                  height: "500px",
-                  marginTop: "80px", // moves the map slightly down
-                  marginRight: "-60px", // moves the map further to the right
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-              >
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14130.840975075269!2d85.32620695884457!3d27.69534911902795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19a77520a339%3A0x4df14616bdef4f1c!2sSoftech%20Foundation%20Pvt.Ltd.!5e0!3m2!1sen!2snp!4v1726047867016!5m2!1sen!2snp"
-                  width="100%"
-                  height="100%"
-                  style={{ border: "none", maxWidth: "100%", maxHeight: "100%" }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Google Maps"
-                ></iframe>
               </div>
             </div>
           </div>
