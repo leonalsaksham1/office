@@ -15,7 +15,7 @@ export default function Achievements() {
       title: "Finished Projects",
       icon: <BriefcaseBusiness size={32} />,
     },
-    { number: 786, title: "Awwwards Winning", icon: <Award size={32} /> },
+    { number: 786, title: "Awards Winning", icon: <Award size={32} /> },
   ];
 
   return (

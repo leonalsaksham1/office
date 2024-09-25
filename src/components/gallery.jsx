@@ -6,7 +6,7 @@ export const Gallery = (props) => {
     <div id="portfolio" className="text-center">
       <div className="container">
         <div className="section-title">
-          <h2 style={{ color: "#2B4F56" }}>Gallery</h2>
+          <h2 style={{ color: "#12403F" }}>Gallery</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
             dapibus leonec.
@@ -16,7 +16,7 @@ export const Gallery = (props) => {
           <div className="portfolio-items">
             {props.data
               ? props.data
-                  .slice(0, 6) // Display only 6 images
+                  .slice(0, 3) // Display only 6 images
                   .map((d, i) => (
                     <div
                       key={`${d.title}-${i}`}
@@ -44,7 +44,7 @@ export const Gallery = (props) => {
         >
           <button
             style={{
-              backgroundColor: "#2B4F56",
+              backgroundColor: "rgb(233 6 6)",
               border: "none",
               borderRadius: "30px",
               color: "#fff",
@@ -61,4 +61,4 @@ export const Gallery = (props) => {
       </div>
     </div>
   );
-};
+}; 

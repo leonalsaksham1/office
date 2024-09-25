@@ -1,17 +1,21 @@
+
 import { UsersRound } from "lucide-react";
 import { Mail } from "lucide-react";
 import React, { useEffect, useState } from "react";
-// import logo from "../img/logo.png"; // Updated path
+// import logo from "../img/logo.png"; // Updated pathb
 
 export const Navigation = (props) => {
   const [scrolled, setScrolled] = useState(false);
+  const [hideTop, setHideTop] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
         setScrolled(true);
+        setHideTop(true);
       } else {
         setScrolled(false);
+        setHideTop(false);
       }
     };
 
@@ -20,13 +24,52 @@ export const Navigation = (props) => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <nav
       id="menu"
-      className={`navbar navbar-default navbar-fixed-top scrolled `}
+      className={`navbar navbar-default navbar-fixed-top scrolled p-0 ${
+        scrolled ? "scrolled" : ""
+      }`}
     >
+      <div className={``}>5
+        <div className="top-top-nav">
+          <div className="container">
+            <div className="top-top-div">
+              
+              <a href="#">English,</a>
+              <a href="#">Nepali</a>
+              <a href="#"></a>
+              <a href="#">Admin</a>
+              <a href="#"></a>
+            </div>
+          </div>
+        </div>
+        <div className="bg-white">
+          <div className={`container navbar-top `}>
+            <div className="navbar-top-wrapper">
+              <a
+                className="navbar-brand page-scroll"
+                style={{ padding: "0px" }}
+                href="#page-top"
+              >
+                <img
+                  src={"img/logo.png"}
+                  alt="logo"
+                  style={{ width: "60px", height: "60px" }}
+                />
+              </a>
+              <h3>
+                Softech <br />
+                AI + technology{" "}
+              </h3>
+              <div className=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="container">
-        <div className="navbar-header">
+        {/* <div className="navbar-header">
           <button
             type="button"
             className="navbar-toggle collapsed"
@@ -50,13 +93,13 @@ export const Navigation = (props) => {
               style={{ width: "60px", height: "60px" }}
             />
           </a>{" "}
-        </div>
+        </div> */}
 
         <div
           className="collapse navbar-collapse"
           id="bs-example-navbar-collapse-1"
         >
-          <ul className="nav navbar-nav navbar-right">
+          <ul className="nav navbar-nav navbar-right navbar-wrapper">
             <li>
               <a href="#page-top" className="page-scroll">
                 <svg
@@ -127,3 +170,4 @@ export const Navigation = (props) => {
     </nav>
   );
 };
+

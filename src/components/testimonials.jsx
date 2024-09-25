@@ -5,7 +5,7 @@ export const Testimonials = (props) => {
     <div id="testimonials">
       <div className="container">
         <div className="section-title text-center">
-          <h2 style={{ color: "#2B4F56" }}>What our clients say</h2>
+          <h2 style={{ color: "#12403F" }}>What our clients say</h2>
         </div>
         <div className="row">
           {props.data

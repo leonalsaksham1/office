@@ -56,9 +56,9 @@ export const Contact = (props) => {
                 height="100%"
                 style={{
                   border: "none",
-                  maxWidth: "100%",
-                  maxHeight: "333px",
-                  borderRadius: "10px",
+                  maxWidth: "80%",
+                  maxHeight: "300px",
+                  borderRadius: "8px",
                 }}
                 allowFullScreen
                 loading="lazy"
@@ -76,7 +76,7 @@ export const Contact = (props) => {
                 <div className="contact-item">
                   <p>
                     <span>
-                      <i className="fa fa-map-marker"></i> Address
+                      <i className="fa fa-map-marker"></i> Address: Kathmandu,Baneshwor
                     </span>
                     {props.data ? props.data.address : "loading"}
                   </p>
@@ -84,7 +84,7 @@ export const Contact = (props) => {
                 <div className="contact-item">
                   <p>
                     <span>
-                      <i className="fa fa-phone"></i> Phone
+                      <i className="fa fa-phone"></i> Phone: 9843818767
                     </span>
                     {props.data ? props.data.phone : "loading"}
                   </p>
@@ -92,7 +92,7 @@ export const Contact = (props) => {
                 <div className="contact-item">
                   <p>
                     <span>
-                      <i className="fa fa-envelope-o"></i> Email
+                      <i className="fa fa-envelope-o"></i> Email: softech@gmail.com
                     </span>
                     {props.data ? props.data.email : "loading"}
                   </p>

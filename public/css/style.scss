@@ -43,13 +43,13 @@ p.intro {
   line-height: 24px;
 }
 a {
-  color: #56a3a6;
+  color: #12403F;
   font-weight: 400;
 }
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #56a3a6;
+  color: #12403F;
 }
 ul,
 ol {
@@ -66,7 +66,7 @@ hr {
   width: 70px;
   text-align: center;
   position: relative;
-  background: #1e7a46;
+  background: #12403F;
   margin-bottom: 20px;
   border: 0;
 }
@@ -104,7 +104,7 @@ hr {
   bottom: -1px;
   width: 0;
   height: 2px;
-  background: linear-gradient(to right, #27474e 0%, #56a3a6 100%);
+  background: linear-gradient(to right,#3da5a3 30%, #d9edeb 100%);
   content: "";
   transition: width 0.2s;
 }
@@ -125,7 +125,7 @@ hr {
   bottom: -1px !important;
   width: 100% !important;
   height: 2px !important;
-  background: linear-gradient(to right, #27474e 0%, #56a3a6 100%) !important;
+  background: linear-gradient(to right,#3da5a3 30%, #d9edeb 100%) !important;
   content: "" !important;
   transition: width 0.2s !important;
 }
@@ -135,10 +135,10 @@ hr {
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
   background-color: #fff;
-  border-color: #56a3a6;
+  border-color: #12403F;
 }
 .navbar-default .navbar-toggle:hover > .icon-bar {
-  background-color: #56a3a6;
+  background-color: #12403F;
 }
 .section-title {
   margin-bottom: 35px;
@@ -152,7 +152,7 @@ hr {
 .section-title h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #56a3a6 0%, #27474e 100%);
+  background: linear-gradient(to right, #12403F 40%, #228277 100%);
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -166,14 +166,14 @@ hr {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   color: #fff;
-  background-color: #56a3a6;
-  background-image: linear-gradient(to right, #56a3a6 0%, #27474e 100%);
-  padding: 14px 34px;
+  background-color: #12403F;
+  background-image: linear-gradient(to right, #12403F 40%, #228277 100%);
+  padding: 10px 14px;
   letter-spacing: 1px;
   margin: 0;
   font-size: 15px;
   font-weight: 500;
-  border-radius: 25px;
+  border-radius: 26px;
   transition: all 0.5s linear;
   border: 0;
 }
@@ -184,7 +184,7 @@ hr {
 .btn-custom.active {
   color: #fff;
   background-image: none;
-  background-color: #27474e;
+  background-color: hsl(150, 89%, 18%);
 }
 .btn:active,
 .btn.active {
@@ -229,7 +229,7 @@ a:focus,
 }
 .intro h1 span {
   font-weight: 800;
-  color: #56a3a6;
+  color: #12403F;
 }
 .intro p {
   color: #fff;
@@ -260,7 +260,7 @@ header .intro-text {
 #about h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #56a3a6 0%, #27474e 100%);
+  background: linear-gradient(to right, #12403F 40%, #228277 100%);
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -275,7 +275,7 @@ header .intro-text {
 #about .about-text li:before {
   content: "\f00c";
   font-family: "FontAwesome";
-  color: #56a3a6;
+  color: #12403F;
   font-size: 11px;
   font-weight: 300;
   padding-right: 8px;
@@ -306,14 +306,14 @@ header .intro-text {
   height: 100px;
   padding: 30px 0;
   border-radius: 50%;
-  background: linear-gradient(to right, #27474e 0%, #56a3a6 100%);
+  background: linear-gradient(to right, #12403F 40%, #228277 100%);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
 
 /* Services Section */
 #services {
   padding: 30px 0;
-  background: linear-gradient(to right, #27474e 0%, #56a3a6 100%);
+  background: linear-gradient(to right, #12403F 40%, #228277 100%);
   color: #fff;
 }
 #services .service-desc {
@@ -337,7 +337,7 @@ header .intro-text {
   width: 60px;
   height: 60px;
   padding: 18px 0 10px;
-  background: linear-gradient(to right, #27474e 0%, #56a3a6 100%);
+  background: linear-gradient(to right,  #12403F 40%, #228277 100%);
   border-radius: 50%;
   color: #fff;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
@@ -359,7 +359,7 @@ header .intro-text {
 }
 .portfolio-item {
   margin: 1px -15px 0 -14px;
-  padding: 0;
+  padding: 16;
 }
 .portfolio-item .hover-bg {
   overflow: hidden;
@@ -371,7 +371,7 @@ header .intro-text {
   text-align: center;
   margin: 0 auto;
   color: #fff;
-  background: linear-gradient(to right, #2d5f6ac6 0%, #56a3a68f 100%);
+  background: linear-gradient(to right, #12403F 40%, #228277 100%);
   padding: 30% 0 0;
   height: 100%;
   width: 100%;
@@ -460,7 +460,7 @@ header .intro-text {
 #contact {
   padding: 30px 0 5px;
 
-  background: linear-gradient(to right, #27474e 0%, #56a3a6 100%);
+  background: linear-gradient(to right, #12403F 40%, #228277 100%);
   color: rgba(255, 255, 255, 0.75);
 }
 #contact .section-title {
@@ -586,8 +586,8 @@ label {
 /* Footer Section*/
 
 #footer {
-  background: #27474e;
-  padding: 10px 0;
+  background: #12403F; 
+  padding: 6px 0;
 }
 #footer p {
   color: #fff;
@@ -595,10 +595,10 @@ label {
   margin-bottom: 0px;
 }
 #footer a {
-  color: #56a3a6;
+  color:#12403F;
 }
 #footer a:hover {
-  border-bottom: 2px solid #56a3a6;
+  border-bottom: 2px solid #12403F;
 }
 
 @media (max-width: 768px) {
@@ -609,10 +609,10 @@ label {
 .scrolled {
   background: linear-gradient(
     to right,
-    #13262b 0%,
-    #206d71 25%,
-    #1d837e 50%,
-    #1b998b 100%
+    #12403F 0%,
+    #12403F 25%,
+    #0f655b 50%,
+    #228277 100%
   ) !important;
 }
 
@@ -629,7 +629,7 @@ label {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #56a3a66e;
+  background-color: #12403F;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -676,15 +676,15 @@ label {
 }
 .counter-wrap {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 0px;
   .block {
     font-size: 24px;
     width: 70px;
     height: 70px;
     padding: 18px 0 10px;
-    background: linear-gradient(to right, #27474e 0%, #56a3a6 100%);
+    background: linear-gradient(to right, #12403F 0%, #12403F 100%);
     border-radius: 50%;
     color: #fff;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
@@ -714,7 +714,7 @@ label {
 #achievements {
   padding: 100px 0;
   color: white;
-  background: linear-gradient(to right, #27474e 0%, #56a3a6 100%);
+  background: linear-gradient(to right, #12403F 40%, #228277 100%);
   h2 {
     color: white;
   }
@@ -723,6 +723,7 @@ label {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: 20px;
   align-items: center;
   gap: 6px;
   .number {
@@ -738,3 +739,118 @@ label {
     text-align: center;
   }
 }
+
+
+
+
+
+
+@media (min-width: 568px) {
+  .container {
+    width: 550px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 690px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1500px;
+  }
+}
+@media (min-width: 1800px) {
+  .container {
+    width: 1600px;
+  }
+}
+
+
+
+
+.navbar-top-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 105px;
+  gap: 10px;
+  h3 {
+    color: #12403F;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 6px 0;
+    line-height: 33px;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.navbar-wrapper {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center;
+  float: unset !important;
+}
+
+.hidden {
+  display: none;
+}
+.bg-white {
+  background-color: white;
+}
+.p-0 {
+  padding: 0px !important;
+}
+.p-4 {
+  padding: 0px 0 0px 0 !important;
+}
+.top-top-nav {
+  color: white;
+  .container {
+    // display: flex;
+    // justify-content: end;
+    // align-items: center;
+    // gap: 10px;
+    .top-top-div {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 10px;
+      margin: 10 60px;
+      p,
+      a,
+      h3 {
+        color: white;
+        font-size: 14px;
+        font-weight: 600;
+        margin: -6px 0;
+      }
+      a {
+        &:hover {
+          color: #c3f3ed !important;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

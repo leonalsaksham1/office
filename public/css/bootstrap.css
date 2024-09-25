@@ -6756,16 +6756,3 @@ button.close {
 }
 /*# sourceMappingURL=bootstrap.css.map */
 
-.section-container {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Swap the order of the sections */
-#about {
-  order: 1; /* Move About Us to the second position */
-}
-
-#features {
-  order: 2; /* Move Features to the first position */
-}

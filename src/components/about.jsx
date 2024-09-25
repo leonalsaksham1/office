@@ -8,9 +8,9 @@ export const About = (props) => {
           {/* Swapping the position of the text and image columns */}
           <div className="col-xs-12 col-md-6">
             <div className="about-text">
-              <h2 style={{ color: "#2B4F56" }}>About Us</h2>
+              <h2 style={{ color: "##12403F" }}>About Us</h2>
               <p>{props.data ? props.data.paragraph : "loading..."}</p>
-              <h3 style={{ color: "#2B4F56" }}>Why Choose Us?</h3>
+              <h3 style={{ color: "#12403F" }}>Why Choose Us?</h3>
               <div className="list-style">
                 <div className="col-lg-6 col-sm-6 col-xs-12">
                   <ul>
