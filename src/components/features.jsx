@@ -1,17 +1,28 @@
 import React from "react";
+import { useIntersectionObserver } from "./useIntersectionObserver";
 
-export const Features = (props) => {
+export function Features({ data }) {
+  const [targetRef, isIntersecting] = useIntersectionObserver({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
+
   return (
-    <div id="features" className="text-center">
+    <div
+      id="features"
+      ref={targetRef}
+      className={`text-center features-animate ${
+        isIntersecting ? "animate" : ""
+      }`}
+    >
       <div className="container">
         <div className="col-md-10 col-md-offset-1 section-title">
           <h2 style={{ color: "#12403F" }}>Features</h2>
         </div>
         <div className="row">
-          {props.data
-            ? props.data.map((d, i) => (
+          {data
+            ? data.map((d, i) => (
                 <div key={`${d.title}-${i}`} className="col-xs-6 col-md-3">
-                  {" "}
                   <i className={d.icon}></i>
                   <h3>{d.title}</h3>
                   <p>{d.text}</p>
@@ -22,4 +33,4 @@ export const Features = (props) => {
       </div>
     </div>
   );
-};
+}

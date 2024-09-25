@@ -43,13 +43,13 @@ p.intro {
   line-height: 24px;
 }
 a {
-  color: #12403F;
+  color: #12403f;
   font-weight: 400;
 }
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #12403F;
+  color: #12403f;
 }
 ul,
 ol {
@@ -66,7 +66,7 @@ hr {
   width: 70px;
   text-align: center;
   position: relative;
-  background: #12403F;
+  background: #12403f;
   margin-bottom: 20px;
   border: 0;
 }
@@ -104,7 +104,7 @@ hr {
   bottom: -1px;
   width: 0;
   height: 2px;
-  background: linear-gradient(to right,#3da5a3 30%, #d9edeb 100%);
+  background: linear-gradient(to right, #3da5a3 30%, #d9edeb 100%);
   content: "";
   transition: width 0.2s;
 }
@@ -125,7 +125,7 @@ hr {
   bottom: -1px !important;
   width: 100% !important;
   height: 2px !important;
-  background: linear-gradient(to right,#3da5a3 30%, #d9edeb 100%) !important;
+  background: linear-gradient(to right, #3da5a3 30%, #d9edeb 100%) !important;
   content: "" !important;
   transition: width 0.2s !important;
 }
@@ -135,10 +135,10 @@ hr {
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
   background-color: #fff;
-  border-color: #12403F;
+  border-color: #12403f;
 }
 .navbar-default .navbar-toggle:hover > .icon-bar {
-  background-color: #12403F;
+  background-color: #12403f;
 }
 .section-title {
   margin-bottom: 35px;
@@ -152,7 +152,7 @@ hr {
 .section-title h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #12403F 40%, #228277 100%);
+  background: linear-gradient(to right, #12403f 40%, #228277 100%);
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -166,8 +166,8 @@ hr {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   color: #fff;
-  background-color: #12403F;
-  background-image: linear-gradient(to right, #12403F 40%, #228277 100%);
+  background-color: #12403f;
+  background-image: linear-gradient(to right, #12403f 40%, #228277 100%);
   padding: 10px 14px;
   letter-spacing: 1px;
   margin: 0;
@@ -229,7 +229,7 @@ a:focus,
 }
 .intro h1 span {
   font-weight: 800;
-  color: #12403F;
+  color: #12403f;
 }
 .intro p {
   color: #fff;
@@ -260,7 +260,7 @@ header .intro-text {
 #about h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #12403F 40%, #228277 100%);
+  background: linear-gradient(to right, #12403f 40%, #228277 100%);
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -275,7 +275,7 @@ header .intro-text {
 #about .about-text li:before {
   content: "\f00c";
   font-family: "FontAwesome";
-  color: #12403F;
+  color: #12403f;
   font-size: 11px;
   font-weight: 300;
   padding-right: 8px;
@@ -306,14 +306,14 @@ header .intro-text {
   height: 100px;
   padding: 30px 0;
   border-radius: 50%;
-  background: linear-gradient(to right, #12403F 40%, #228277 100%);
+  background: linear-gradient(to right, #12403f 40%, #228277 100%);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
 
 /* Services Section */
 #services {
   padding: 30px 0;
-  background: linear-gradient(to right, #12403F 40%, #228277 100%);
+  background: linear-gradient(to right, #12403f 40%, #228277 100%);
   color: #fff;
 }
 #services .service-desc {
@@ -337,7 +337,7 @@ header .intro-text {
   width: 60px;
   height: 60px;
   padding: 18px 0 10px;
-  background: linear-gradient(to right,  #12403F 40%, #228277 100%);
+  background: linear-gradient(to right, #12403f 40%, #228277 100%);
   border-radius: 50%;
   color: #fff;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
@@ -371,7 +371,7 @@ header .intro-text {
   text-align: center;
   margin: 0 auto;
   color: #fff;
-  background: linear-gradient(to right, #12403F 40%, #228277 100%);
+  background: linear-gradient(to right, #12403f 40%, #228277 100%);
   padding: 30% 0 0;
   height: 100%;
   width: 100%;
@@ -460,7 +460,7 @@ header .intro-text {
 #contact {
   padding: 30px 0 5px;
 
-  background: linear-gradient(to right, #12403F 40%, #228277 100%);
+  background: linear-gradient(to right, #12403f 40%, #228277 100%);
   color: rgba(255, 255, 255, 0.75);
 }
 #contact .section-title {
@@ -586,7 +586,7 @@ label {
 /* Footer Section*/
 
 #footer {
-  background: #12403F; 
+  background: #12403f;
   padding: 6px 0;
 }
 #footer p {
@@ -595,10 +595,10 @@ label {
   margin-bottom: 0px;
 }
 #footer a {
-  color:#12403F;
+  color: #12403f;
 }
 #footer a:hover {
-  border-bottom: 2px solid #12403F;
+  border-bottom: 2px solid #12403f;
 }
 
 @media (max-width: 768px) {
@@ -609,8 +609,8 @@ label {
 .scrolled {
   background: linear-gradient(
     to right,
-    #12403F 0%,
-    #12403F 25%,
+    #12403f 0%,
+    #12403f 25%,
     #0f655b 50%,
     #228277 100%
   ) !important;
@@ -629,7 +629,7 @@ label {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #12403F;
+  background-color: #12403f;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -684,7 +684,7 @@ label {
     width: 70px;
     height: 70px;
     padding: 18px 0 10px;
-    background: linear-gradient(to right, #12403F 0%, #12403F 100%);
+    background: linear-gradient(to right, #12403f 0%, #12403f 100%);
     border-radius: 50%;
     color: #fff;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
@@ -714,7 +714,7 @@ label {
 #achievements {
   padding: 100px 0;
   color: white;
-  background: linear-gradient(to right, #12403F 40%, #228277 100%);
+  background: linear-gradient(to right, #12403f 40%, #228277 100%);
   h2 {
     color: white;
   }
@@ -739,11 +739,6 @@ label {
     text-align: center;
   }
 }
-
-
-
-
-
 
 @media (min-width: 568px) {
   .container {
@@ -772,9 +767,6 @@ label {
   }
 }
 
-
-
-
 .navbar-top-wrapper {
   display: flex;
   align-items: center;
@@ -782,7 +774,7 @@ label {
   padding: 16px 105px;
   gap: 10px;
   h3 {
-    color: #12403F;
+    color: #12403f;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 24px;
@@ -843,14 +835,73 @@ label {
   }
 }
 
+.header-title-text {
+  min-height: 230px;
+}
 
+.fade-in-section {
+  opacity: 0;
+  transform: translateX(0vh);
+  visibility: hidden;
+  transition: opacity 1s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility, transform;
+}
 
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+  transform: translateX(10vh);
+}
 
+.features-animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1.5s ease-out;
+  will-change: opacity, visibility, transform;
+}
 
+.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
 
+.service-swiper-item {
+  height: 200px !important;
+}
 
+.service-swiper {
+  height: 200px !important;
+}
+.swiper-pagination-bullets {
+  display: none;
+}
 
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
 
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow-y: auto;
+  position: relative;
+}
 
-
-
+.modal-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}

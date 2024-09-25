@@ -11,7 +11,7 @@ export default function Counter({ number, title, icon }) {
         </div>
       </div>
       <div className="number">
-        <CountUp duration={2} className="counter" end={number} />
+        <CountUp duration={3} className="counter" end={number} />
       </div>
       <p className="title">{title}</p>
     </div>

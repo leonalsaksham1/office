@@ -1,4 +1,11 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
 
 export const Services = (props) => {
   return (
@@ -11,20 +18,35 @@ export const Services = (props) => {
             dapibus leonec.
           </p>
         </div>
-        <div className="row">
+        <Swiper
+          modules={[Autoplay, Pagination]}
+          spaceBetween={30}
+          slidesPerView={3}
+          loop={true}
+          autoplay={{
+            delay: 1000,
+            disableOnInteraction: false,
+          }}
+          pagination={{ clickable: false }}
+          className="service-swiper"
+        >
           {props.data
             ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`} className="col-md-4">
-                  {" "}
-                  <i className={d.icon}></i>
-                  <div className="service-desc">
-                    <h3>{d.name}</h3>
-                    <p>{d.text}</p>
+                <SwiperSlide
+                  className="service-swiper-item"
+                  key={`${d.name}-${i}`}
+                >
+                  <div className="service-item">
+                    <i className={d.icon}></i>
+                    <div className="service-desc">
+                      <h3>{d.name}</h3>
+                      <p>{d.text}</p>
+                    </div>
                   </div>
-                </div>
+                </SwiperSlide>
               ))
             : "loading"}
-        </div>
+        </Swiper>
       </div>
     </div>
   );

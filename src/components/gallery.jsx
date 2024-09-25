@@ -1,7 +1,13 @@
 import { Image } from "./image";
-import React from "react";
+import React, { useState } from "react";
+import Modal from "./modal";
 
 export const Gallery = (props) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
   return (
     <div id="portfolio" className="text-center">
       <div className="container">
@@ -15,50 +21,45 @@ export const Gallery = (props) => {
         <div className="row">
           <div className="portfolio-items">
             {props.data
-              ? props.data
-                  .slice(0, 3) // Display only 6 images
-                  .map((d, i) => (
-                    <div
-                      key={`${d.title}-${i}`}
-                      className="col-sm-6 col-md-4 col-lg-4"
-                    >
-                      <Image
-                        title={d.title}
-                        largeImage={d.largeImage}
-                        smallImage={d.smallImage}
-                      />
-                    </div>
-                  ))
+              ? props.data.slice(0, 3).map((d, i) => (
+                  <div
+                    key={`${d.title}-${i}`}
+                    className="col-sm-6 col-md-4 col-lg-4"
+                  >
+                    <Image
+                      title={d.title}
+                      largeImage={d.largeImage}
+                      smallImage={d.smallImage}
+                    />
+                  </div>
+                ))
               : "Loading..."}
           </div>
         </div>
-        {/* Adjusting the "See More" button */}
-        <div
-          className="button-container"
-          style={{
-            marginTop: "10px", // Adjust this to move it closer to the images
-            paddingBottom: "50px", // Added padding at the bottom to prevent it from touching the next section
-            position: "relative",
-            width: "100%",
-          }}
-        >
+        <div className="button-container">
           <button
-            style={{
-              backgroundColor: "rgb(233 6 6)",
-              border: "none",
-              borderRadius: "30px",
-              color: "#fff",
-              padding: "16px 16px",
-              fontSize: "18px",
-              cursor: "pointer",
-              position: "absolute",
-              right: "-16", // Aligns to the right
-            }}
+            className="btn btn-custom btn-lg page-scroll"
+            onClick={openModal}
           >
             See More
           </button>
         </div>
       </div>
+      {isModalOpen && (
+        <Modal onClose={closeModal}>
+          <div className="modal-gallery">
+            {props.data &&
+              props.data.map((d, i) => (
+                <Image
+                  key={`modal-${d.title}-${i}`}
+                  title={d.title}
+                  largeImage={d.largeImage}
+                  smallImage={d.smallImage}
+                />
+              ))}
+          </div>
+        </Modal>
+      )}
     </div>
   );
-}; 
+};

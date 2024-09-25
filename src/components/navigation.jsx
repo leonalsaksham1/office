@@ -1,4 +1,3 @@
-
 import { UsersRound } from "lucide-react";
 import { Mail } from "lucide-react";
 import React, { useEffect, useState } from "react";
@@ -32,11 +31,10 @@ export const Navigation = (props) => {
         scrolled ? "scrolled" : ""
       }`}
     >
-      <div className={``}>5
+      <div className={``}>
         <div className="top-top-nav">
           <div className="container">
             <div className="top-top-div">
-              
               <a href="#">English,</a>
               <a href="#">Nepali</a>
               <a href="#"></a>
@@ -170,4 +168,3 @@ export const Navigation = (props) => {
     </nav>
   );
 };
-
