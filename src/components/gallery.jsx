@@ -4,6 +4,7 @@ import Modal from "./modal";
 
 export const Gallery = (props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isHovered, setIsHovered] = useState(false); // State to handle hover
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
@@ -36,10 +37,23 @@ export const Gallery = (props) => {
               : "Loading..."}
           </div>
         </div>
-        <div className="button-container">
+        {/* Inline style to change the button size and shape */}
+        <div className="button-container" style={{ textAlign: "right" }}>
           <button
-            className="btn btn-custom btn-lg page-scroll"
+            className="btn btn-danger btn-lg page-scroll"
             onClick={openModal}
+            style={{
+              backgroundColor: isHovered ? "#12403F" : "red",
+              color: "white",
+              cursor: "pointer",
+              borderRadius: "30px", // Adjust border radius for oval shape
+              padding: "10px 16px", // Smaller padding for smaller button size
+              fontSize: "14px", // Adjust font size to make it smaller
+              transition: "background-color 0.3s ease", // Smooth hover transition
+              border: "none", // Remove any border
+            }}
+            onMouseEnter={() => setIsHovered(true)} // Set hover state to true
+            onMouseLeave={() => setIsHovered(false)} // Set hover state to false
           >
             See More
           </button>
