@@ -905,3 +905,17 @@ label {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
 }
+
+.mt-10 {
+  margin-top: 160px;
+}
+
+.mb-10 {
+  margin-bottom: 160px;
+}
+
+.gallery-images {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}

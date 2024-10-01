@@ -1,6 +1,7 @@
 import { UsersRound } from "lucide-react";
 import { Mail } from "lucide-react";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 // import logo from "../img/logo.png"; // Updated pathb
 
 export const Navigation = (props) => {
@@ -46,17 +47,17 @@ export const Navigation = (props) => {
         <div className="bg-white">
           <div className={`container navbar-top `}>
             <div className="navbar-top-wrapper">
-              <a
+              <Link
                 className="navbar-brand page-scroll"
                 style={{ padding: "0px" }}
-                href="#page-top"
+                to="/"
               >
                 <img
                   src={"img/logo.png"}
                   alt="logo"
                   style={{ width: "60px", height: "60px" }}
                 />
-              </a>
+              </Link>
               <h3>
                 Softech <br />
                 AI + technology{" "}
@@ -99,7 +100,7 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right navbar-wrapper">
             <li>
-              <a href="#page-top" className="page-scroll">
+              <Link to="/" className="page-scroll">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -124,7 +125,7 @@ export const Navigation = (props) => {
                     d="M480 256 266.89 52c-5-5.28-16.69-5.34-21.78 0L32 256m368-77V64h-48v69"
                   ></path>
                 </svg>
-              </a>
+              </Link>
             </li>
 
             <li>
@@ -143,7 +144,7 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
-              <a href="#portfolio" className="page-scroll">
+              <a href="/gallery" className="page-scroll">
                 Gallery
               </a>
             </li>
