@@ -11,7 +11,7 @@ const Servicepage = () => {
     <div>
       
     
-      <div className="container mb-10 mt-10">
+      <div className="container  mt-10">
         <div className="modal-gallery ">
         <AboutService data={JsonData.ServiceDetail} />
         </div>

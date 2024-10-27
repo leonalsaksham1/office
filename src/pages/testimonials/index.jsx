@@ -11,12 +11,12 @@ const Testimonialpage = () => {
     <div>
       
     
-      <div className="container mb-10 mt-10">
-        <div className="modal-gallery ">
+      <div className="container  mt-10">
+        
         <AboutTestimonials data={JsonData.TestimonialsDetail} />
         </div>
       </div>
-    </div>
+    
   );
 };
 

@@ -9,9 +9,10 @@ import "swiper/css/autoplay";
 
 export const AboutTestimonials = (props) => {
   return (
-    <div id="testimonials">
-      <div className="container mb-10 mt-10">
-        <div className="section-title text-center">
+    <div id="testimonials" className="bg-white">
+      
+      
+        <div className="section-title text-center ">
           <h2 style={{ color: "#12403F" }}>What our clients say</h2>
         </div>
         {/* <div className="row">
@@ -64,6 +65,6 @@ export const AboutTestimonials = (props) => {
             : "loading"}
         </Swiper>
       </div>
-    </div>
+    
   );
 };

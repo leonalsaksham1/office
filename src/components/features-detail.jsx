@@ -11,11 +11,10 @@ export function AboutFeatures({ data }) {
     <div
       id="features"
       ref={targetRef}
-      className={`text-center features-animate ${
+      className={`text-center features-animate bg-white ${
         isIntersecting ? "animate" : ""
       }`}
     >
-      <div className="container mb-10 mt-10">
         <div className="col-md-10 col-md-offset-1 section-title">
           <h2 style={{ color: "#12403F" }}>Features</h2>
         </div>
@@ -31,6 +30,5 @@ export function AboutFeatures({ data }) {
             : "Loading..."}
         </div>
       </div>
-    </div>
   );
 }

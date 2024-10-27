@@ -8,11 +8,9 @@ const Contactpage = () => {
  
 
   return (
-    <div style={{ backgroundColor: "#ddd" }}>
       <div className="container mt-10">
         <AboutContact data={JsonData.ContactDetail} />
       </div>
-    </div>
   );
 };
 

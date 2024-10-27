@@ -43,8 +43,8 @@ export const AboutContact = (props) => {
 
   return (
     <div>
-      <div className="contact-section">
-        <div className="container">
+      <div className="contact-section bg-white">
+        <div className="">
           <div className="contact-content">
             <div className="contact-info">
               <h3 className="section-heading">CONTACT INFO</h3>

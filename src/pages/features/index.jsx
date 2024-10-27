@@ -10,11 +10,11 @@ const Featurepage = () => {
   return (
     <div>
       <div className="container mb-10 mt-10">
-        <div className="modal-gallery ">
+        
         <AboutFeatures data={JsonData.FeaturesDetail} />
         </div>
       </div>
-    </div>
+    
   );
 };
 
