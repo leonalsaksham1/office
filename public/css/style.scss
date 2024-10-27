@@ -7,6 +7,9 @@ html {
   font-weight: 400;
   width: 100% !important;
   height: 100% !important;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 h2,
 h3,
@@ -221,7 +224,7 @@ a:focus,
 .intro h1 {
   font-family: "Raleway", sans-serif;
   color: #fff;
-  font-size: 82px;
+  font-size: 60px;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 0;
@@ -294,7 +297,7 @@ header .intro-text {
 /* Features Section */
 #features {
   background: #f6f6f6;
-  padding-bottom: 60px;
+  padding-bottom: 100px;
   padding-top: 60px;
 }
 #features i.fa {
@@ -311,14 +314,40 @@ header .intro-text {
 }
 
 /* Services Section */
+body, html {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 #services {
-  padding: 30px 0;
-  background: linear-gradient(to right, #12403f 40%, #228277 100%);
+  position: relative;
+  width: 100%;
+  padding: 30px 0 5px;
   color: #fff;
 }
-#services .service-desc {
-  margin: 10px 10px 20px;
+
+#services::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50vw;
+  right: -50vw;
+  bottom: 0;
+  background: linear-gradient(to right, #12403f 40%, #228277 100%);
+  z-index: -1;
 }
+
+#services .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+#services .service-desc {
+  margin: 10px 0 20px;
+}
+
 #services h2 {
   color: #fff;
 }
@@ -442,9 +471,38 @@ header .intro-text {
 #team {
   padding: 30px 0;
 }
-#team h4 {
-  margin: 5px 0;
+
+#team .team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
 }
+
+#team .team-img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+}
+
+#team .thumbnail {
+  background: transparent;
+  border: 0;
+  width: 240px;
+  padding: 0;
+  margin: 0;
+}
+
+#team .thumbnail .caption {
+  padding: 10px 0 0;
+  color: #888;
+  text-align: center;
+}
+
+#team h4 {
+  margin: 10px 0 5px;
+}
+
 #team .team-img {
   width: 240px;
 }
@@ -918,4 +976,163 @@ label {
   width: 200px;
   height: 200px;
   object-fit: cover;
+}
+
+.contact-section {
+  padding: 120px 0;
+  background-color: #f5f5f5;
+
+  .container {
+    max-width: 1200px; // Adjust as needed
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  .contact-info,
+  .get-in-touch {
+    width: 48%; // Adjust as needed
+  }
+
+  h3 {
+    color:rgb(18, 64, 63);
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  // Style for contact info
+  .contact-info {
+    p {
+      margin: 5px 0;
+    }
+  }
+
+  // Style for get in touch form
+  .get-in-touch {
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      width: calc(50% - 5px); // Adjust for gap
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    button {
+      background-color: #12403f;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  }
+
+  .location-container {
+    margin-top: 30px;
+
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 300px;
+      object-fit: cover;
+    }
+  }
+
+  .section-heading {
+    color: #12403f; // Adjust color to match your design
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 3px solid #12403f; // This creates the underline
+    display: inline-block; // This ensures the border only spans the text width
+    padding-bottom: 5px; // This adds some space between text and underline
+  }
+
+  .contact-info .section-heading::after {
+    width: 100px; // Adjust for "CONTACT INFO"
+  }
+
+  .get-in-touch .section-heading::after {
+    width: 90px; // Adjust for "GET IN TOUCH"
+  }
+
+  .location-container .section-heading::after {
+    width: 70px; // Adjust for "LOCATION"
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .contact-section {
+    .contact-content {
+      flex-direction: column;
+    }
+
+    .contact-info,
+    .get-in-touch {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .get-in-touch {
+      input[type="text"],
+      input[type="email"] {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.navbar-brand {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  width: 180px; // Increase this value to make the logo larger
+  height: auto; // Maintain aspect ratio
+  max-height: none; // Remove any max-height restrictions
+  transition: all 0.3s ease-in-out;
+}
+
+// If you have a separate class for the logo, you can target it directly:
+.logo-image {
+  width: 180px; // Adjust this value as needed
+  height: auto;
+}
+
+// Adjust padding of the navbar to accommodate the larger logo
+.navbar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+// For responsive design, you might want to adjust the size for smaller screens
+@media (max-width: 768px) {
+  .navbar-brand img,
+  .logo-image {
+    width: 140px; // Smaller size for mobile devices
+  }
 }

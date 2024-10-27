@@ -14,6 +14,13 @@ import SmoothScroll from "smooth-scroll";
 import "./App.css";
 import Achievements from "./components/counter-section";
 import GalleryPage from "./pages/gallery";
+import Aboutpage from "./pages/about";
+import Servicepage from "./pages/services";
+import Featurepage from "./pages/features";
+import Testimonialpage from "./pages/testimonials";
+import Teamspage from "./pages/teams";
+import Contactpage from "./pages/contact";
+
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -46,6 +53,12 @@ const App = () => {
           }
         />
         <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="/about" element={<Aboutpage />} />
+        <Route path="/services" element={<Servicepage />} />
+        <Route path="/features" element={<Featurepage />} />
+        <Route path="/testimonials" element={<Testimonialpage />} />
+        <Route path="/team" element={<Teamspage />} />
+        <Route path="/contact" element={<Contactpage />} />
       </Routes>
       <Contact data={landingPageData.Contact} />
     </div>

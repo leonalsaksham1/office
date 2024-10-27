@@ -39,9 +39,10 @@ export const Gallery = (props) => {
         </div>
         {/* Inline style to change the button size and shape */}
         <div className="button-container" style={{ textAlign: "right" }}>
-          <button
+          <a
+          href="/gallery"
             className="btn btn-danger btn-lg page-scroll"
-            onClick={openModal}
+            
             style={{
               backgroundColor: isHovered ? "#12403F" : "red",
               color: "white",
@@ -56,7 +57,7 @@ export const Gallery = (props) => {
             onMouseLeave={() => setIsHovered(false)} // Set hover state to false
           >
             See More
-          </button>
+          </a>
         </div>
       </div>
       {isModalOpen && (

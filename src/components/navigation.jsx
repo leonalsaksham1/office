@@ -55,7 +55,7 @@ export const Navigation = (props) => {
                 <img
                   src={"img/logo.png"}
                   alt="logo"
-                  style={{ width: "60px", height: "60px" }}
+                  style={{ width: "76px", height: "76px" }}
                 />
               </Link>
               <h3>
@@ -129,17 +129,17 @@ export const Navigation = (props) => {
             </li>
 
             <li>
-              <a href="#about" className="page-scroll">
+              <a href="/about" className="page-scroll">
                 About
               </a>
             </li>
             <li>
-              <a href="#features" className="page-scroll">
+              <a href="/features" className="page-scroll">
                 Features
               </a>
             </li>
             <li>
-              <a href="#services" className="page-scroll">
+              <a href="/services" className="page-scroll">
                 Services
               </a>
             </li>
@@ -149,17 +149,17 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
-              <a href="#testimonials" className="page-scroll">
+              <a href="/testimonials" className="page-scroll">
                 Testimonials
               </a>
             </li>
             <li>
-              <a href="#team" className="page-scroll">
+              <a href="/team" className="page-scroll">
                 <UsersRound />
               </a>
             </li>
             <li>
-              <a href="#contact" className="page-scroll">
+              <a href="/contact" className="page-scroll">
                 <Mail />
               </a>
             </li>
